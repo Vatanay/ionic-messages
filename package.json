@@ -1,12 +1,28 @@
 {
   "name": "ionic-messages",
   "version": "0.1.0",
-  "private": true,
+  "author": "Vatanay <hi@vatanay.com>",
+  "description": "It includes a message interface compatible with Ionic.",
+  "main": "dist/ion-messages.common.js",
+  "keywords": [
+    "ionic",
+    "message",
+    "chat",
+    "ui"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vatanay/ionic-messages"
+  },
+  "bugs": {
+    "url": "https://github.com/Vatanay/ionic-messages/issues"
+  },
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13"

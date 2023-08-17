@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <IonMessages :messages="messages"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import IonMessages from "@/components/IonMessages.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    IonMessages
+  },
+  data() {
+    return {
+      messages: [{
+        text: "Hello there!",
+        sender: "me",
+        avatar: "http://via.placeholder.com/360x360"
+      },{
+        text: "Hi.",
+        sender: "them",
+        avatar: "http://via.placeholder.com/360x360"
+      }]
+    };
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
